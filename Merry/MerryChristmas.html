@@ -1,0 +1,86 @@
+<html lang="vi" __fvdsurfcanyoninserted="1" class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    ">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        window.open = function () {};
+        window.print = function () {};
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function () {};
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here" />
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+
+    <div class="pyro">
+
+        <div class="before">
+
+        </div>
+        <div class="after">
+
+        </div>
+        <div class="container">
+            <!-- 2. Dòng chữ Happy Birthday
+                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+            <div class="balloon">
+                <div><span>M</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+                <div><span>R</span></div>
+                <div><span>Y</span></div>
+                <div><span>C</span></div>
+                <div><span>H</span></div>
+                <div><span>R</span></div>
+                <div><span>I</span></div>
+                <div><span>S</span></div>
+                <div><span>T</span></div>
+                <div><span>M</span></div>
+                <div><span>A</span></div>
+                <div><span>S</span></div>
+            </div>
+
+            <div class="avatar">
+                <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                <img src="./myheart.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                <!-- 4. Tên của người đó -->
+                <h1 onclick="showMessage()" class="avatar__title">Em Yêu Dấu HiHi >.<</h1> </div> <!-- 5. Phần nhạc -->
+                        <audio id="player" autoplay loop>
+                            <source src="./noel.mp3" type="audio/mp3">
+                        </audio>
+            </div>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Lời nhắn mật ngọt <3", // Tiêu đề của popup
+                    text: "Mừng Giáng Sinh, tình yêu của anh! Chúc cho tình yêu chúng ta luôn tươi mới như mùa xuân và luôn rạng rỡ như ánh mặt trời. >.< Mãi Yêu <3", // Nội dung lời nhắn
+                    button: {
+                        text: "❤️️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
